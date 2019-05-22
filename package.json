@@ -1,0 +1,19 @@
+{
+  "name": "spambot",
+  "version": "1.0.0",
+  "description": "It spams other spambots",
+  "main": "spam.js",
+  "scripts": {
+    "start": "PORT=12345 TARGET_URL=http://localhost:11223/spam node spam.js",
+    "start2": "PORT=11223 TARGET_URL=http://localhost:12345/spam node spam.js"
+  },
+  "keywords": [
+    "spam"
+  ],
+  "author": "Matt Smith",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.17.0"
+  }
+}
