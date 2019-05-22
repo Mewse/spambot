@@ -41,3 +41,7 @@ app.get("/status", (req, res) => {
 setInterval(spam, INTERVAL);
 
 app.listen(PORT);
+
+process.on('SIGINT', function() {
+    process.exit();
+});
